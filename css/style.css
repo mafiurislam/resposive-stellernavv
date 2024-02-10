@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    background: pink;
+    padding: 15px 0;
+}
+
+.header .d-flex{
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sign-up{
+    width: 100px;
+    height: 40px;
+    border:none;
+    border-radius: 4px;
+    background-color:#FFD43F ;
+}
+
+.stellarnav {
+    width: max-content;
+    background: none!important;
+}
+
+.stellarnav ul ul {
+    top: auto;
+    width: 180px;
+    position: absolute;
+    z-index: 9900;
+    text-align: left;
+    display: none;
+    /* margin:24px 0 0 0; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.stellarnav ul ul li{
+    coolr: #000 !important;
+    
+}
+
+.stellarnav>ul>li>a {
+    padding: 0;
+    color: #000 !important;;
+}
+
+.stellarnav li.has-sub>a:after {
+    content: '';
+    margin-left: 10px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000;
+    display: inline-block;
+}
+
+.stellarnav.dark, .stellarnav.dark ul ul {
+    background:none;
+}
+
+.stellarnav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    gap: 60px;
+}
+
+.drop-down ul li a{
+    color:#0000;
+}
+
+.stellarnav ul ul li a {
+    color: #000000 !important;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+
+    .stellarnav>ul>li>a {
+        padding: 0;
+        color: #ffffff !important;;
+    }
+
+    .stellarnav.mobile.dark ul {
+        background: rgba(0,0,0,1);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 81px;
+    }
+
+    .stellarnav.mobile.dark ul ul:nth-child(2) {
+        background: rgb(0 0 0);
+        top: 52px;
+    }
+
+    .stellarnav ul ul li a {
+        color: #ffffff !important;
+    }
+
+
+}
